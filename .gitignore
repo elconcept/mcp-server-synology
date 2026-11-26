@@ -263,3 +263,11 @@ scratch_*.py
 .zcode/
 .claude/skills/
 .claude/settings.local.json
+
+
+# Local Synology deployment and credentials belong outside the source repo.
+/config/
+/.env.*
+/.claude/
+/.codex/
+/docker-compose.portainer.yml

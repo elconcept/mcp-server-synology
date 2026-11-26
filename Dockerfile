@@ -12,7 +12,7 @@ RUN apt-get update && apt-get install -y \
 # Install the project and its dependencies from pyproject.toml (single source
 # of truth). mcp>=2.0.0 ships starlette, uvicorn, and sse-starlette, so one
 # install covers both stdio and Streamable HTTP transports.
-COPY pyproject.toml ./
+COPY pyproject.toml README.md LICENSE ./
 COPY src/ ./src/
 RUN pip install --no-cache-dir .
 

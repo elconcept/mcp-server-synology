@@ -46,3 +46,14 @@ Thumbs.db
 # Test files
 test_*
 *_test.py 
+
+# Runtime settings and local tools are never image inputs.
+config/
+logs/
+.claude/
+.codex/
+.agents/
+.github/
+# setuptools reads project metadata and license files during pip install.
+!README.md
+!LICENSE
